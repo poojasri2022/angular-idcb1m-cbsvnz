@@ -10,6 +10,7 @@ export class ProductAlertsComponent {
   // Product is an interface type
   value = 'The product goes on sale';
   @Input() product!: Product;
+  // notify is an event
   @Output() notify = new EventEmitter<string>();
 
   ngOnInit() {
